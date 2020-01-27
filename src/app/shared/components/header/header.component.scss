@@ -1,0 +1,9 @@
+nav > a {
+    padding: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+nav > a.active {
+    background-color: blue;
+}

@@ -1,0 +1,34 @@
+<div class="grid-container">
+
+  <div class="grid-item">
+    <h1>Radicados asociados</h1>
+
+    <span class="filter">
+
+      <mat-icon>search</mat-icon>
+      
+      <input maxlength="8" 
+        class="autocomplete" 
+        type="text" 
+        placeholder="Asunto o fecha" 
+        (change)="ngOnChanges($event.target.value)">
+
+    </span>
+
+    <br><br><br>
+
+    <app-radicado appTimeline timelineColor="{{ radicado.register_date }}" 
+      *ngFor="let radicado of radicadosFiltrados"
+      (radicadoClicked)="clickRadicado($event)"
+      [radicado]="radicado">
+    </app-radicado>
+    
+  </div>
+
+  <div class="grid-item">
+    <h1>Historial de la radicación</h1>
+    <br>
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

@@ -1,0 +1,31 @@
+.radicado-detail {
+    background-color: rgba($color: #f3f1f128, $alpha: 1);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.radicado-detail-history-true {
+    width: 46%;
+    border: solid 1px rgb(167, 167, 167);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    float: left;
+}
+
+.radicado-detail-history-false {
+    width: 46%;
+    border: solid 1px rgb(251, 45, 45);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    float: right;
+}
+
+mat-icon {
+    font-size: 16px;
+}
+
+span {
+    color: rgb(167, 167, 167);
+}

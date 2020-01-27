@@ -1,0 +1,12 @@
+<a [routerLink]="['/radicado', radicado.id]">
+    
+    <h3>{{ radicado.type }}</h3>
+
+    <p>
+        <mat-icon>watch_later</mat-icon>
+        {{ radicado.register_date | date:'dd.MM.yyyy' }}
+    </p>
+    
+</a>
+
+<hr>

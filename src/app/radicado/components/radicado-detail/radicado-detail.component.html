@@ -1,0 +1,17 @@
+<div class="radicado-detail">
+  <h4>{{ radicado.name }}</h4>
+  <p>{{ radicado.code }}</p>
+  <p>{{ radicado.type }}</p>
+  <p>{{ radicado.description }}</p>
+</div>
+
+<div
+  class="radicado-detail-history-{{ historial.input }}" 
+  *ngFor="let historial of radicado.log">
+
+  <h4>{{ historial.title }}</h4>
+  <span>
+    <mat-icon>watch_later</mat-icon>{{ historial.register_date }}
+  </span>
+  <p>{{ historial.description }}</p>
+</div>
